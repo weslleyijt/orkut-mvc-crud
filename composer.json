@@ -1,0 +1,14 @@
+{
+    "name": "weslley/orkut-mvc-crud",
+    "description": "Clone of an orkut social network to study mvc and crud as php",
+    "autoload": {
+        "psr-4": {
+            "App\\" : "App"
+        }, "files": [
+            "config.php"
+        ]
+    },
+    "require": {
+        "twig/twig": "^3.3"
+    }
+}

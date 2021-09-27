@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <link rel="stylesheet" href="assets/css/style.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    </head> 
+    <body>
+        <section class="top-nav">
+            <div class="container">   
+                <a class="navbar-brand" rel="home" href="#">  
+                </a>
+                <div class="pull-left"> 
+                    <ul> 
+                        <li>
+                            <a href="#home">Início</a>
+                        </li>
+                        <li>
+                            <a href="#home">Perfil</a>
+                        </li>
+                        <li>
+                            <a href="#home">Página e recados</a>
+                        </li>
+                        <li>
+                            <a href="#home">Amigos</a> 
+                        </li> 
+                        <li>
+                            <a href="#home">Comunidades</a> 
+                        </li> 
+                    </ul> 
+                </div>
+                
+                <div class="pull-right">
+                    <ul>
+                        <li>
+                            <span>{{user_email}}</span>   
+                        </li>
+                        <li>
+                            <a href="#home">Sair</a>
+                        </li>  
+                    </ul>  
+                </div>
+                
+                <div class="search-input-group"> 
+                    <form class="search-input" action="">
+                        <input type="text" placeholder="pesquisa do orkut" name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                      </form> 
+                </div> 
+            </div>
+        </section>
+
+        <section class="home container">    
+            <div class="row mt-20">
+                <div class="col-left">
+                    {{user_profile | raw}} 
+                </div> 
+                <div class="col-middle pd-lr-10"> 
+                    {{dynamic_area | raw}}  
+                </div>  
+                <div class="col-right">
+                    {{panel_side | raw}} 
+                </div>  
+            </div> 
+        </section> 
+        
+        <footer class="mt-20">     
+            <div class="container footer border">  
+                <div class="footer-content">
+                    <a href="#home"><img src="assets/img/logo-footer.png"></a>
+                    <a href="#home">Sobre o orkut</a>
+                    <a href="#home">Centro de segurança</a>
+                    <a href="#home">Privacidade</a>
+                    <a href="#home">Termos de uso</a> 
+                    <a href="#home">Ajuda</a> 
+                    <a href="#home">Contato</a> 
+                </div> 
+            </div>
+        </footer>
+    </body>
+</html>

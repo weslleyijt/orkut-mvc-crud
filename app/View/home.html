@@ -1,0 +1,69 @@
+<div class="dynamic-content border left-top-border">  
+    <div class="body-content"> 
+        <h3>Bem-vindo(a), {{user_name}}</h3> 
+    
+        <div class="primary-profile">
+            <div class="primary-profile-button">
+                <p>recados</p>
+                <a href="#" > 
+                    <i class="icon-message "></i>
+                    {{scraps}}
+                </a>  
+            </div>
+            <div class="primary-profile-button"> 
+                <p>fotos</p>
+                <a href="#">  
+                    <i class="icon-photo "></i>
+                    {{photos}}
+                </a>  
+            </div>
+            <div class="primary-profile-button"> 
+                <p>vídeos</p>
+                <a href="#" > 
+                    <i class="icon-video "></i>
+                    {{videos}}
+                </a>  
+            </div>
+            <div class="primary-profile-button"> 
+                <p>fãs</p> 
+                <a href="#" > 
+                    <i class="icon-fans "></i>
+                    {{fans}}
+                </a>  
+            </div>
+            <div class="primary-profile-button"> 
+                <p>mensagens</p>
+                <a href="#" > 
+                    <i class="icon-message2 "></i>
+                    {{messages}}
+                </a>  
+            </div>
+        </div> 
+    
+        <p><b>Visualizações de seu perfil:</b> {{data}}</p>
+        <p><b>Seus visitantes recentes:</b> {{visitors}}</p>
+        <p><b>Sorte de hoje:</b> {{today_luck}}</p>
+    </div>
+</div>
+    
+<div class="dynamic-content border mt-20"> 
+   
+    <div class="tab-panel">  
+        <ul class="tabs ">
+            <li class="tabs-active">
+                <a href="#">Atualizações dos meus amigos</a>  
+            </li>
+            <li class="tabs-linear">
+                <a href="#">Minhas atualizações</a>   
+            </li>
+        </ul>  
+ 
+        <div class="no-margin-separator"></div>  
+
+        <table class="content-table"> 
+            <tr>
+              <td>nenhuma atualização recente</td> 
+            </tr>  
+          </table>
+    </div>
+</div>
