@@ -14,19 +14,23 @@
                 $template =  $twig->load('template.html');
 
                 if(isset($urlGet))  
-                {
+                { 
                     $strArray = explode('/', $urlGet);   
                     $controller = ucfirst($strArray[0] . "Controller"); 
                 } 
                 else
                     $controller = "HomeController";
-                
+                 
+                $controller = 'App\Controller\\' . $controller;
+                $profileController = 'App\Controller\\ProfileController'; 
+                $panelController = 'App\Controller\\PanelController';
+
                 if(!class_exists($controller))
                     $controller = "HomeController"; 
- 
-                $params['user_profile'] = $this->user_func('ProfileController', $urlGet);
+  
+                $params['user_profile'] = $this->user_func($profileController, $urlGet);
                 $params['dynamic_area'] = $this->user_func($controller, $urlGet);
-                $params['panel_side'] = $this->user_func('PanelController', $urlGet); 
+                $params['panel_side'] = $this->user_func($panelController, $urlGet); 
                 $params['user_email'] = "email@gmail.com"; 
 
                 $content = $template->render($params);
@@ -43,7 +47,7 @@
         public function user_func($controller, $params)  
         {
             $action = "index"; 
-            $tmp = 'App\Controller\\' . $controller; 
+            $tmp = $controller; 
 
             ob_start();
                 call_user_func_array(array(new $tmp, $action), array($params));   

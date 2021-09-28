@@ -1,6 +1,5 @@
 *{ 
-    margin: 0;
-    letter-spacing: normal;    font-family: sans-serif;
+    margin: 0; 
     font-size: 13px; 
 }
 
@@ -77,15 +76,16 @@ body{
 }
  
 .search-input-group
-{ 
+{     
     position: relative;
     float: right;     
     width: 170px; 
     margin: 0 auto;
     height: 26px; 
-    margin-top: 5px; 
+    margin-top: 4px;
     background-color: #5c7eaa;
-    border-radius: 6px; 
+    border-radius: 6px;  
+    
 }
 
 .no-padding{
@@ -95,7 +95,7 @@ body{
 
 .search-input
 {         
-    margin-top: 2.5px;    
+    margin-top: 3px;
     margin-left: 7px;    
 }
  
@@ -116,8 +116,9 @@ body{
     border: 1px solid #fff;      
     background: #f1f1f1;
     text-decoration: none;
-    margin : 0 auto;
-    width: 120px;      
+    margin : 0 auto; 
+    width: 120px;
+    height: 16px;  
 }
 
 .search-input input:focus
@@ -132,13 +133,14 @@ body{
     top: 50%;
     transform: translateY(-50%);
 
-    margin-bottom: 3px;
+
     font-weight: 300;
+    padding-bottom: 3px; 
+    margin-bottom: 3px;
 }
 
 .pull-right{ 
     padding-right: 180px; 
-    margin-bottom: 3px;
     font-weight: 300;
 
     right: 0;  
@@ -146,6 +148,9 @@ body{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    
+    margin-bottom: 3px;
+    padding-bottom: 3px; 
 }
 
 .top-nav a{
@@ -207,8 +212,7 @@ body{
 {  
     padding: 10px 10px; 
     background-color: #fff;
-    height: 100%;
-    
+    height: 100%; 
 }
 
 .pd-lr-10 
@@ -225,9 +229,14 @@ body{
     border-top-right-radius: 60px;
 }
 
-.mt-20{  
+.mt-10{  
     margin-top: 10px;
 }
+
+.mt-20{  
+    margin-top: 20px;
+}
+
 
 .mt-5{
     margin-top: 5px; 
@@ -479,9 +488,7 @@ body{
 }
 
 .content-table table { 
-    border-collapse: collapse;
-   
-    
+    border-collapse: collapse; 
 }
 
 td, th { 
@@ -520,8 +527,7 @@ tr:nth-child(even) {
  } 
 
  .alert{
-    background-color: #fcfdde; 
-    border-radius: 6px;
+    background-color: #fcfdde;  
     padding: 6px; 
  }
  .alert b{
@@ -533,16 +539,13 @@ tr:nth-child(even) {
  }
 
  .login-desc{  
-    width:640px; 
-    height: 412px; 
- 
-    
+    width:640px;  
  }
 
  .login-box{ 
     margin-left: 10px;
     width:370px; 
-    height: 412px;  
+    height: 386px;  
 
     padding: 0;
     display: flex;
@@ -551,15 +554,15 @@ tr:nth-child(even) {
  }
 
 .panel-login{ 
-    padding: 10px 10px;
-    background-color: #e8eefa;
+    padding: 5px 5px;
+    background-color: #fff;
     height: 266px;
 }
 
 .panel-register{   
-    padding: 10px 10px;
-    background-color: #e8eefa;
-    height: 116px; 
+    padding: 5px 5px;
+    background-color: #fff;
+    height: 90px; 
 }
 
 .img-logo{
@@ -570,7 +573,7 @@ tr:nth-child(even) {
 }
 
 .desc-contents b{
- color: palevioletred;  
+ color: #d746ae;  
 }
 
 .desc-contents { 
@@ -594,4 +597,98 @@ tr:nth-child(even) {
 .text-center{
     margin-bottom:auto;
     text-align: center;
+}
+
+.panel-body-no-padding{  
+    position: relative;
+    background-color: #e8eefa;
+    height: 100%; 
+}
+
+.pd-10{
+    padding: 10px 10px;
+}
+
+.pd-15{
+    padding: 15px 15px;
+}
+ 
+ 
+.container-login {
+	display: flex;
+}
+.container-login > .right, .container-login > .left {
+	flex-grow: 1;
+}
+.container-login > div {
+	display: flex;
+	flex-direction: column; 
+	margin: 0 10px;
+}
+
+.container-login > div.left {
+	align-items: center;
+}
+
+.left > div, .right > div {
+	margin: 4px 0;  
+}
+
+.left-label{ 
+    width: 50px;
+}
+  
+.container-login span {
+	color: #9477b0;
+}
+ 
+.text-center a{
+    color: #4b47be; 
+    text-decoration: underline;
+}
+
+input{ font-size: inherit;  height: 20px;}
+ 
+.checkbox  { 
+    padding-top: 10px;
+    padding-left: 20px;  
+    cursor: pointer;
+}
+
+.left > div {
+    margin-top: 10px;
+}
+
+.register-area{  
+    position:absolute;
+     text-align:center;  margin-top:25px;
+    height:100%; width:100%;
+}
+
+.register-area a{ 
+    font-weight: bold; 
+    color: #4b47be; 
+    text-decoration: underline;
+
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.content-2{  
+    background-color: #bccdea; 
+    position: relative;    
+    margin: 0 auto;
+    width:1020px;
+    text-align: center;
+  
+}
+
+.content-2 a{
+    font-size: 12px;
+    color: #0047be;
+}
+
+.content-2 span{
+    color: #333333;
+    font-size: 12px;
 }
