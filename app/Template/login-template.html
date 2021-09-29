@@ -31,7 +31,7 @@
                 <div class="login-box">
                     <div class="panel-login"> 
                         <div class="panel-body-no-padding"> 
-                            <form class="pd-15 login">  
+                            <form class="pd-15 login" action="authenticate" method="POST">    
                                 <p class="text-center mt-5">Acesse o orkut com a sua conta</p>  
                                 <div class="input-group mt-10"> 
                                     <div class="container-login"> 
@@ -46,8 +46,8 @@
                                         </div>
                                       
                                         <div class="right"> 
-                                          <div><input type="text"></div> 
-                                          <div><input type="text"></div>
+                                          <div><input type="text" name="email"></div> 
+                                          <div><input type="password" name="password"></div>
                                           <div><label>Salvar as minhas informações neste computador.</label></div>  
                                           <div><span>Não use em computadores públicos. [?]</span> </div>   
                                           <div><button type="submit" class="">Login</button></div>   

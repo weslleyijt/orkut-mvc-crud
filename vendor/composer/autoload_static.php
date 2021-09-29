@@ -7,9 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInit87720048283e466bd9eb2a19012cbddd
 {
     public static $files = array (
-        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         'ec9ae7112468b75ab1bb8c115966ead4' => __DIR__ . '/../..' . '/config.php',
+        '915b6ced93afdc7523fa4f7e0e63f166' => __DIR__ . '/../..' . '/lib/Database/Connection.php',
     );
 
     public static $prefixLengthsPsr4 = array (

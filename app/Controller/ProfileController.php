@@ -1,7 +1,7 @@
 <?php
     namespace App\Controller;
 
-    class ProfileController  
+    class ProfileController extends Controller
     {
         public function index()
         { 

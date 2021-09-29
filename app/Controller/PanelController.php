@@ -1,7 +1,7 @@
 <?php
     namespace App\Controller;
 
-    class PanelController   
+    class PanelController extends Controller 
     {
         public function index()
         { 
