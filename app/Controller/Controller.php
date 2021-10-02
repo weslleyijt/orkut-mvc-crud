@@ -25,9 +25,9 @@
 
                 $template =  $twig->load('template.html');
   
-                $params['col_left'] = $this->render_right_content(); 
+                $params['col_left'] = $this->render_left_content(); 
                 $params['col_middle'] = $this->render_center_content();
-                $params['col_right'] = $this->render_left_content();  
+                $params['col_right'] = $this->render_right_content();   
      
                 $params['user_email'] = self::$user_info['user_email'];   
  
