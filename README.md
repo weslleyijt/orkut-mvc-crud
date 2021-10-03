@@ -1,2 +1,2 @@
 # orkut-mvc-crud
-This is an orkut clone created for the sole purpose of putting the MVC and CRUD design patterns into practice using the programming language PHP, HTML and JAVASCRIPT
+This is a small raw MVC design pattern study using an orkut social network as an example, contains the page only the functional homepage and login page
